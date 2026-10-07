@@ -37,6 +37,8 @@ needed unless the task explicitly asks for one.
 replacement images. The copy includes the home page, Docs, Launch, Arena, and two linked coin
 pages. Wallet features and live market data are not connected.
 
-To deploy permanently, import this repository into Vercel. The root `vercel.json` points Vercel to
-the `web/` output directory; no build command or environment variables are required. A deployment
-made through a signed-in Vercel account will not expire after an hour like anonymous deployments.
+The production site is published at <https://proxypad-terracotta.vercel.app/> in the
+`proxypad-terracotta` Vercel project. The root `vercel.json` points Vercel to the `web/` output
+directory; no build command or environment variables are required. To deploy further changes, run
+`vercel deploy --prod` after signing in and linking this checkout to the project. Automatic GitHub
+deployments require a GitHub login connection in the Vercel account.
