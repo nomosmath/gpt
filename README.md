@@ -31,3 +31,12 @@ uv run gpt
 Use the existing checkout in `/workspace/gpt` in Codex cloud tasks. A separate Git worktree is not
 needed unless the task explicitly asks for one.
 
+## Website
+
+`web/` contains the static ProxyPad visual copy with a terracotta theme and seven generated
+replacement images. The copy includes the home page, Docs, Launch, Arena, and two linked coin
+pages. Wallet features and live market data are not connected.
+
+To deploy permanently, import this repository into Vercel. The root `vercel.json` points Vercel to
+the `web/` output directory; no build command or environment variables are required. A deployment
+made through a signed-in Vercel account will not expire after an hour like anonymous deployments.
